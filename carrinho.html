@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="CSS/menu.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/Carrinho.css">
+</head>
+<body>
+
+    <header>
+        <div class="fantasy">
+            <h2>FANTASY</h2>
+        </div>
+        <div class="menu">
+            <nav><a href="index.html"><img src="IMG/download.png" alt=""></a></nav>
+            <div class="div-input">
+                <input id="pesquisa" type="text" placeholder="Pesquise aqui!">
+                <a href="#">
+                    <span class="x">
+                        <ion-icon onclick="apagar()" id="search" name="close"></ion-icon>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="search">
+                        <ion-icon name="search"></ion-icon>
+                    </span>
+                </a>
+            </div>
+            <ul>
+                <li class="icons">
+                    <a href="#">
+                         <span class="icon" id="person"><ion-icon name="person"></ion-icon></span>
+                    </a>
+                </li>
+
+                <li class="icons">
+                    <a href="carrinho.html">
+                         <span class="icon"><ion-icon name="cart"></ion-icon></span>
+                    </a>
+                </li>
+
+                <li class="icons">
+                    <a href="#"id="open-close">
+                        <span class="icon" id="open-icon" onclick="menu()"><ion-icon name="menu"></ion-icon></span>
+                        <span class="close-icon" onclick="menu()"><ion-icon name="close"></ion-icon></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="magia">
+            <h2>a magia está em suas mãos</h2>
+        </div>
+
+        <div class="drop" id="drop">
+            <ul>
+                <li>
+                    <h2>
+                        <a href="index.html">Home</a>
+                    </h2>
+                </li>
+    
+                <li>
+                    <h2>
+                        <a href="Historia.html">Sobre Nós</a>
+                    </h2>
+                </li>
+            </ul>
+        </div>
+
+        <section class="drop-user" id="drop-user">
+            <ul>
+                <li>
+                    <h2>
+    
+                        <a href="Login.html">Login</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+    
+                        <a href="Cadastro.html">Cadastro</a>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+    
+                        <a href="Usuario.html">Usuario</a>
+                    </h2>
+                </li>
+            </ul>
+        </section>
+    </header>
+    
+    <main>
+        <section class="construcao">
+            <img src="IMG/download.png" alt="">
+            <h1>Em Manutenção</h1>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contatos">
+            <div class="contatos-out">
+                <ul>
+                    <li>
+                        <h2>Contatos</h2>
+                    </li>
+                    <li>
+                        <ion-icon onclick="AbrirContatos()" name="ios-arrow-down"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="contatos-in" id="contatos-in" >
+            <ul>
+                <li>
+                    <ion-icon class="logo-facebook" name="logo-facebook"></ion-icon>
+                </li>
+
+                <li>
+                    <ion-icon class="logo-whatsapp" name="logo-whatsapp"></ion-icon>
+                </li>
+
+                <li>
+                    <img class="logo-google" width="40px" height="40px" src="ionicons.designerpack (1)/icons8-google.svg" alt="">
+                </li>
+            </ul>
+        </div>
+     
+        <div class="seguranca">
+            <div class="seguranca-out">
+                <ul>
+                    <li>
+                        <h2>Segurança</h2>
+                    </li>
+                    <li>
+                        <ion-icon onclick="AbrirSeguranca()" name="ios-arrow-down"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="seguranca-in" id="seguranca-in" >
+            <ul>
+                <li>
+                    <img src="ionicons.designerpack (1)/icons8-ssl-48.png" width="40px" height="40px" alt="">
+                </li>
+
+                <li>
+                   <img src="ionicons.designerpack (1)/icons8-web-security-40.png" width="40px" height="40px" alt="">
+                </li>
+            </ul>
+        </div>
+    
+        <div class="pagamentos">
+            <div class="pagamentos-out">
+                <ul>
+                    <li>
+                        <h2>Pagamentos</h2>
+                    </li>
+                    <li>
+                        <ion-icon onclick="AbrirPagamentos()" name="ios-arrow-down"></ion-icon>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pagamentos-in" id="pagamentos-in">
+            <ul>
+                <li>
+                    <img src="ionicons.designerpack (1)/icons8-boleto-40.png" width="40px" height="40px" alt="">
+                </li>
+
+                <li>
+                   <img src="ionicons.designerpack (1)/icons8-mastercard-40.png" width="40px" height="40px" alt="">
+                </li>
+
+                <li>
+                    <img src="ionicons.designerpack (1)/icons8-visa-40.png" width="40px" height="40px" alt="">
+                </li>
+
+                <li>
+                    <img src="ionicons.designerpack (1)/icons8-pix-40.png" width="40px" height="40px" alt="">
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="JS/Menu.js"></script>
+    <script src="JS/Footer.js"></script>
+    <script src="JS/Carrinho.js"></script>
+</body>
+</html>

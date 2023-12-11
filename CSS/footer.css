@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Eczar&family=Libre+Franklin&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+footer{
+    padding-top:0px;
+}
+
+.contatos{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+.contatos, .seguranca, .pagamentos{
+    width: 70%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: rgb(231, 231, 231);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contatos-out, .seguranca-out, .pagamentos-out{
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px;
+    padding: 10px 0px;
+}
+
+.contatos-out ul, .seguranca-out ul , .pagamentos-out ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contatos-out ion-icon ,.pagamentos-out ion-icon, .seguranca-out ion-icon{
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.contatos-in, .pagamentos-in, .seguranca-in{
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    display: none;
+    justify-content: space-around;
+    background-color: rgb(231, 231, 231);
+}
+
+.contatos-in ul, .pagamentos-in ul,.seguranca-in ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+}
+
+.contatos-in ion-icon, .seguranca-in ion-icon{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.pagamentos-in{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.logo-facebook{
+    color: #3b5998;
+}
+
+.logo-whatsapp{
+    color: #34af23;
+}
+@media screen and (max-width:768px) {
+
+    .contatos, .seguranca, .pagamentos{
+        width: 80%;
+    }
+
+    .contatos-in, .pagamentos-in, .seguranca-in{
+        width: 80%;
+    }
+    
+    footer{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .contatos, .seguranca, .pagamentos{
+        width: 90%;
+    }
+
+    .contatos-in, .pagamentos-in, .seguranca-in{
+        width: 90%;
+    }
+    
+    footer{
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    footer{
+        margin-top:100px;
+    }
+}
+
+.copyright{
+    margin-top: 50px;
+    padding: 15px;
+    width: 100%;
+    background-color: #3b125c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shrikhand', sans-serif;
+    color: white;
+}

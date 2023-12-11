@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Eczar&family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    background-image: url(background-login.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    margin-top: 50px;
+}
+
+.login{
+    width: 30%;
+    height: auto;
+    background-color: #B26EDB;
+    opacity: 95%;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.login-ul{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login h2{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Chewy', cursive;
+}
+
+.login input{
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.btn{
+    background-color: #19BCC4;
+    color: white;
+    cursor: pointer;
+}
+
+.icon-ul{
+    width: 100%;
+    height: 250px;
+    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.icon-ul h3{
+    width: 100%;
+    font-size: 1.6em;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.icon-ul a{
+    width: 100%;
+    font-size: 1.6em;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icon-ul img{
+    width: 64px;
+    height: 64px;
+}
+
+.caixa-alerta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+    display: none;
+}
+
+.caixa-alerta article{
+    width: 500px;
+    height: 400px;
+    background-color: #FF9BC0;
+    margin-top: -80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.caixa-alerta article h2{
+    position: absolute;
+    margin-bottom: 100px;
+}
+.caixa-alerta article button{
+    width: 40%;
+    margin-top: 100px;
+    font-family: 'Libre Franklin', sans-serif;
+    height: 10%;
+    border: none;
+    border-radius: 35px;
+}
+
+@media (max-width:500px){
+    .login{
+        width: 70%;
+        margin-left: 0px;
+        margin: 0 auto;
+    }
+
+    .login-ul li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .login-ul li input{
+        width: 90%;
+    }
+
+    .icon-ul h3{
+        font-size: 1.5rem;
+    }
+
+    .icon-ul li{
+        width: 50px;
+        height: 50px;
+    }
+
+    .icon-ul a{
+        font-size: 1.5rem;
+    }
+}
